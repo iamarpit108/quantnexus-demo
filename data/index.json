@@ -28,7 +28,6 @@
   "/api/v1/chart-templates": "fc35cd08ce291525.json",
   "/api/v1/forecast/kronos/status": "54e61c7163153107.json",
   "/api/v1/forecast/kronos/backtest/report": "a3b0ef42ebf2872c.json",
-  "/api/v1/admin/gate": "43beb61ecb3b0183.json",
   "/api/v1/stock/TCS.NS/charts?type=candlestick": "97be2d4424624169.json",
   "/api/v1/stock/TCS.NS/charts?type=derivatives": "781622f05f670188.json",
   "/api/v1/stock/TCS.NS/charts?type=fno": "4e90997c2696e3db.json",

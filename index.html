@@ -7953,7 +7953,7 @@ function App() {
           <ResearchBoard />
         </div>
         <div className="h-full" style={{ display: activeTab === "admin" ? "block" : "none" }}>
-          <AdminSection />
+          <div className="p-8 text-[13px]" data-testid="demo-admin-empty" style={{ color: "var(--text-dim)" }}>Admin is not part of the public demo. There is no backend, no credentials and no configuration here to unlock.</div>
         </div>
       </main>
     </div>

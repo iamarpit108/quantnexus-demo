@@ -15,6 +15,7 @@
   var indexP = realFetch("data/index.json", { cache: "no-store" }).then(function (r) { return r.json(); });
   var fileCache = {};
   window.__demoMisses = [];
+  window.__demoBlocked = [];
 
   function respond(status, body) {
     return new Response(JSON.stringify(body), {
@@ -22,6 +23,7 @@
     });
   }
   function disabled(what) {
+    window.__demoBlocked.push(what);
     return respond(403, { detail: "Disabled in the demo (" + what + "). Request a live walkthrough to see it run." });
   }
   function load(file) {
@@ -49,7 +51,7 @@
     }
     if (method !== "GET") return Promise.resolve(disabled(method + " " + path));
     // Never captured by design: credentials, providers, broker and config surfaces.
-    if ((path.indexOf("/api/v1/admin/") === 0 && path !== "/api/v1/admin/gate") ||
+    if (path.indexOf("/api/v1/admin/") === 0 ||
         path.indexOf("/api/v1/broker/") === 0 ||
         ["/api/v1/providers", "/api/v1/thresholds", "/health"].indexOf(path) !== -1) {
       return Promise.resolve(disabled("admin"));
