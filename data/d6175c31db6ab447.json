@@ -1,0 +1,1 @@
+{"reply":"Nexus here. The agent's current state is as follows:\n\n*   **Status:** IDLE\n*   **Mode:** OBSERVE\n*   **Market Regime:** RISK_OFF with 65 confidence\n*   **Open Positions:** 1 out of 18 available\n*   **Portfolio Heat:** 0.01% (limit is 5%)\n*   **Shortlist Count:** 5","refused":false,"reason":null,"provider":"gemini","intent":"explain","mode":"explain"}

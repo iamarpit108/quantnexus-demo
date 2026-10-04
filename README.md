@@ -1,11 +1,13 @@
 # QuantNexus — interactive demo
 
+**Designed and built by Arpit Jain.** © 2026 Arpit Jain. All rights reserved — see [LICENSE](LICENSE).
+
 A read-only, interactive snapshot of **QuantNexus**, a private algorithmic-trading research
 platform for Indian equities and F&O: an LLM-assisted agent pipeline
 (Sentinel scan → Research → Investment Committee → Execution → Monitoring) that trades
 **paper only**.
 
-**Live demo:** _link added after deploy_
+**Live demo:** https://quantnexus-demo.netlify.app
 
 ## What you are looking at
 

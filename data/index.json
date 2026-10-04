@@ -28,6 +28,7 @@
   "/api/v1/chart-templates": "fc35cd08ce291525.json",
   "/api/v1/forecast/kronos/status": "54e61c7163153107.json",
   "/api/v1/forecast/kronos/backtest/report": "a3b0ef42ebf2872c.json",
+  "/api/v1/news/brief/latest": "91ed6c09b150cd1c.json",
   "/api/v1/stock/TCS.NS/charts?type=candlestick": "97be2d4424624169.json",
   "/api/v1/stock/TCS.NS/charts?type=derivatives": "781622f05f670188.json",
   "/api/v1/stock/TCS.NS/charts?type=fno": "4e90997c2696e3db.json",
@@ -218,6 +219,25 @@
   "/api/v1/analytics/trade/cae0f9f6": "bd08f807f3d27f19.json",
   "/api/v1/analytics/trade/b831035c": "c73f16514e9c3ced.json",
   "/ws/v1/events": "cda3a82dc487dad1.json",
-  "/api/v1/sentinel/status/demo": "6cdf852f210c1d50.json"
- }
+  "/api/v1/sentinel/status/demo": "6cdf852f210c1d50.json",
+  "chat|AGENT||What's the best trade idea on the shortlist right now?": "aed334fa75b72bcd.json",
+  "chat|AGENT||Why is the market regime what it is?": "2200cdd9d2f09b2c.json",
+  "chat|AGENT||Walk me through the pipeline on this screen": "dd315c6c65ed41f2.json",
+  "chat|WORKSPACE|TCS.NS|What trade would you take here \u2014 long, short or none?": "6a24aad940cc1fca.json",
+  "chat|WORKSPACE|TCS.NS|Explain this candlestick chart": "45e9ff5eeffd000e.json",
+  "chat|WORKSPACE|TCS.NS|What does ATR mean, using this stock?": "3ca5eb259d4de692.json",
+  "chat|NEWS||What's the market mood today?": "3203eb43be9990ef.json",
+  "chat|NEWS||Which sectors does the news favour?": "956b735741cff456.json",
+  "chat|NEWS||What's the key risk to watch?": "cd6d6e4007055236.json",
+  "chat|SENTINEL||What does the agent's state look like?": "90bee9f5427f500a.json",
+  "chat|SENTINEL||What is Sentinel screening for?": "f7b27908d11c13af.json",
+  "chat|PAPER TRADING||Summarise the agent's current state": "d6175c31db6ab447.json",
+  "chat|PAPER TRADING||How is risk being limited?": "8f9ecd80d93740d7.json",
+  "chat|ANALYTICS||What can you help me with?": "adf73e755117f347.json",
+  "chat|ANALYTICS||Summarise what this tab shows": "62597a2b946106d8.json",
+  "chat|RESEARCH||What can you help me with?": "bdd466793aac0976.json",
+  "chat|RESEARCH||Summarise what this tab shows": "f4083c04a308961e.json",
+  "/api/v1/sentinel/status/tour": "8a95a38482925519.json"
+ },
+ "tour_scan_criteria": "{\"long\":{\"delivery_pct_min\":50,\"rsi_range\":[25,40],\"sr_proximity_pct\":1.5,\"week52_low_pct\":10}}"
 }

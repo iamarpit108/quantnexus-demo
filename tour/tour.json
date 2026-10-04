@@ -1,0 +1,676 @@
+{
+ "stops": [
+  {
+   "id": "0-welcome",
+   "page": "landing",
+   "audio": "tour/0-welcome.mp3?v=a6195b0d9e",
+   "duration": 10.635,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 2.02,
+     "text": "Welcome. I'm Nexus."
+    },
+    {
+     "start": 2.24,
+     "end": 10.415,
+     "text": "Over the next two minutes I'll show you an AI-assisted trading research system — built end to end, and honest about what it can and can't do."
+    }
+   ]
+  },
+  {
+   "id": "1a-idea",
+   "label": "THE IDEA",
+   "tab": "AGENT",
+   "highlight": {
+    "sel": "main"
+   },
+   "audio": "tour/1a-idea.mp3?v=264447ea08",
+   "duration": 14.505,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 3.67,
+     "text": "This is the control room, and it holds the whole idea.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 3.89,
+     "end": 10.09,
+     "text": "An AI-assisted trading desk where Python does every calculation, and the AI only gives judgement.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]"
+      }
+     ]
+    },
+    {
+     "start": 10.31,
+     "end": 14.285,
+     "text": "No AI ever sets a price, a stop or a position size.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Risk",
+        "Execution"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1b-finding",
+   "label": "FINDING THE TRADE",
+   "tab": "AGENT",
+   "highlight": {
+    "sel": "[data-testid=agent-spine]",
+    "rows": [
+     "Market intel",
+     "Regime",
+     "Sentinel",
+     "Research"
+    ]
+   },
+   "audio": "tour/1b-finding.mp3?v=4fcee3acd1",
+   "duration": 12.985,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 6.145,
+     "text": "Each day starts with market intelligence and a regime read — is the market risk-on, or risk-off?",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Market intel",
+        "Regime"
+       ]
+      },
+      {
+       "sel": "[data-testid=agent-regime]"
+      }
+     ]
+    },
+    {
+     "start": 6.365,
+     "end": 12.765,
+     "text": "Sentinel then scans the universe against thirty conditions, and the strongest candidates go to research.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Sentinel",
+        "Research"
+       ]
+      },
+      {
+       "sel": "[data-testid=agent-shortlist]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1c-montecarlo",
+   "label": "MONTE CARLO",
+   "tab": "AGENT",
+   "highlight": {
+    "sel": "[data-testid=agent-spine]",
+    "rows": [
+     "Committee"
+    ]
+   },
+   "audio": "tour/1c-montecarlo.mp3?v=9260933b6f",
+   "duration": 25.15,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 3.57,
+     "text": "Before anyone argues for a trade, it's stress-tested.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Committee"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 3.79,
+     "end": 12.765,
+     "text": "A Monte Carlo engine simulates thousands of price paths from the stock's own history, using two methods — block bootstrap, and GARCH.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Committee"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 12.985,
+     "end": 18.585,
+     "text": "It asks: how often does price hit the target first, the stop first, or neither, in time?",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Committee"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 18.805,
+     "end": 24.93,
+     "text": "That's a no-edge baseline. It tells the committee how much edge the setup must supply to be worth taking.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Committee"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1d-committee",
+   "label": "THE COMMITTEE",
+   "tab": "AGENT",
+   "highlight": {
+    "sel": "[data-testid=agent-spine]",
+    "rows": [
+     "Committee",
+     "Risk",
+     "Portfolio"
+    ]
+   },
+   "audio": "tour/1d-committee.mp3?v=44d8474b0e",
+   "duration": 18.13,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 6.995,
+     "text": "Then an AI investment committee debates it: a Bull, a Bear who must answer the simulation, and a Moderator.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Committee"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 7.215,
+     "end": 11.365,
+     "text": "Python computes the expected value, and makes the final call.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Committee"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 11.585,
+     "end": 17.91,
+     "text": "A risk guardian checks seven gates, and the portfolio stage blocks duplicates and over-concentration.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Risk",
+        "Portfolio"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1e-execution",
+   "label": "EXECUTION & MONITORING",
+   "tab": "AGENT",
+   "highlight": {
+    "sel": "[data-testid=agent-spine]",
+    "rows": [
+     "Execution",
+     "Monitor"
+    ],
+    "also": "decision-stream"
+   },
+   "audio": "tour/1e-execution.mp3?v=8a9602b8b7",
+   "duration": 16.43,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 3.845,
+     "text": "Approved trades are filled on paper, with realistic costs.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Execution"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 4.065,
+     "end": 10.14,
+     "text": "Monitoring watches every stop and target, and closes intraday positions before the session ends.",
+     "focus": [
+      {
+       "sel": "[data-testid=agent-spine]",
+       "rows": [
+        "Monitor"
+       ]
+      }
+     ]
+    },
+    {
+     "start": 10.36,
+     "end": 16.21,
+     "text": "Every step lands here, in the decision stream — so each trade can be traced from idea to exit.",
+     "focus": [
+      {
+       "stream": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2-sentinel",
+   "tab": "SENTINEL",
+   "highlight": {
+    "sel": "main"
+   },
+   "sentinel_edits": {
+    "rsi_range": [
+     25,
+     40
+    ],
+    "delivery_pct_min": 50,
+    "sr_proximity_pct": 1.5,
+    "week52_low_pct": 10
+   },
+   "audio": "tour/2-sentinel.mp3?v=13e4b7a531",
+   "duration": 16.43,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 2.045,
+     "text": "Sentinel is the screener.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 2.265,
+     "end": 10.815,
+     "text": "Thirty-four criteria, every one tunable — shift the RSI window, demand stronger delivery, tighten the distance to support — and run it.",
+     "focus": [
+      {
+       "sel": "[data-testid=sentinel-criteria]"
+      }
+     ]
+    },
+    {
+     "start": 11.035,
+     "end": 16.21,
+     "text": "Every stock is scored against thirty technical and derivatives conditions, and ranked.",
+     "focus": [
+      {
+       "sel": "[data-testid=sentinel-results]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3-paper",
+   "tab": "PAPER TRADING",
+   "highlight": {
+    "sel": "main"
+   },
+   "audio": "tour/3-paper.mp3?v=bc05cb4fed",
+   "duration": 19.33,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 3.295,
+     "text": "Every trade here is paper — and that's deliberate.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 3.515,
+     "end": 13.24,
+     "text": "QuantNexus is still in active development, so each strategy is proven in paper trading, with modelled trading costs, before it ever touches real money.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 13.46,
+     "end": 19.11,
+     "text": "Each position shows its entry, its stop, its target, and where the price sits between them.",
+     "focus": [
+      {
+       "sel": "[data-testid=paper-blotter]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4-workspace",
+   "tab": "WORKSPACE",
+   "ticker": "TCS",
+   "highlight": {
+    "sel": "main"
+   },
+   "audio": "tour/4-workspace.mp3?v=2935b02718",
+   "duration": 9.66,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 3.07,
+     "text": "The workspace is the deep dive on one stock:",
+     "focus": [
+      {
+       "sel": "[data-testid=workspace-header]"
+      }
+     ]
+    },
+    {
+     "start": 3.29,
+     "end": 9.44,
+     "text": "candlesticks, indicators, options and futures, and the full trail of how a decision was reached.",
+     "focus": [
+      {
+       "sel": "[data-testid=workspace-rail]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4b-sector",
+   "label": "SECTOR MAP",
+   "tab": "WORKSPACE",
+   "ticker": "TCS",
+   "rail": "Sector map",
+   "audio": "tour/4b-sector.mp3?v=5f9ce96d6f",
+   "duration": 14.435,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 2.67,
+     "text": "And no stock is read in isolation.",
+     "focus": [
+      {
+       "sel": "[data-testid=sector-heatmap]"
+      }
+     ]
+    },
+    {
+     "start": 2.89,
+     "end": 14.215,
+     "text": "The sector map lines TCS up against its Indian peers and global leaders — from Accenture to SAP to TSMC — so you see whether a move is the stock, or the whole sector.",
+     "focus": [
+      {
+       "sel": "[data-testid=sector-heatmap]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5-news",
+   "tab": "NEWS",
+   "highlight": {
+    "sel": "main"
+   },
+   "audio": "tour/5-news.mp3?v=12c98ad961",
+   "duration": 26.005,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 8.595,
+     "text": "The news desk pulls more than fifty macro headlines — from twenty-eight RSS feeds plus news APIs — and filters out the noise.",
+     "focus": [
+      {
+       "sel": "[data-testid=news-rail]"
+      },
+      {
+       "sel": "[data-testid=news-desk]"
+      }
+     ]
+    },
+    {
+     "start": 8.815,
+     "end": 19.315,
+     "text": "Then an AI strategist reads every one: is the market leaning risk-on or risk-off, which sectors the news favours, which are under pressure, and the biggest risk to watch.",
+     "focus": [
+      {
+       "sel": "[data-testid=news-brief]"
+      }
+     ]
+    },
+    {
+     "start": 19.535,
+     "end": 25.785,
+     "text": "It all feeds the first stage of the pipeline — and missing data is always labelled, never filled in.",
+     "focus": [
+      {
+       "sel": "[data-testid=news-side]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6-analytics",
+   "tab": "ANALYTICS",
+   "highlight": {
+    "sel": "main"
+   },
+   "audio": "tour/6-analytics.mp3?v=f8c40ab6cd",
+   "duration": 9.135,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 2.62,
+     "text": "Analytics grades the system itself:",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 2.84,
+     "end": 8.915,
+     "text": "profit and loss by strategy, trading costs, and whether the AI's confidence matched reality.",
+     "focus": [
+      {
+       "sel": "[data-testid=analytics-rail]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7-research",
+   "tab": "RESEARCH",
+   "highlight": {
+    "sel": "main"
+   },
+   "audio": "tour/7-research.mp3?v=009e4b0a22",
+   "duration": 38.975,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 4.245,
+     "text": "This is the part I'm proudest of — and it's built like a research lab.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 4.465,
+     "end": 12.615,
+     "text": "Every hypothesis is pre-registered before it's tested, on eight hundred and sixty thousand stock-days across five hundred symbols.",
+     "focus": [
+      {
+       "sel": "[data-testid=research-rail]"
+      }
+     ]
+    },
+    {
+     "start": 12.835,
+     "end": 26.36,
+     "text": "Ridge, elastic net, sparse group lasso and LightGBM models are scored by cross-sectional rank IC, using purged, embargoed walk-forward validation and Newey-West statistics — so nothing leaks from the future.",
+     "focus": [
+      {
+       "sel": "[data-testid=research-board]"
+      }
+     ]
+    },
+    {
+     "start": 26.58,
+     "end": 38.755,
+     "text": "The failures are published right next to the successes. One model cleared the bar: LightGBM, with a rank IC of plus zero point zero four, across more than a thousand out-of-sample days.",
+     "focus": [
+      {
+       "sel": "[data-testid=research-board]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7b-nexus",
+   "label": "NEXUS CO-PILOT",
+   "tab": "WORKSPACE",
+   "ticker": "TCS",
+   "chat_demo": true,
+   "audio": "tour/7b-nexus.mp3?v=40ad4480b0",
+   "duration": 22.675,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 4.245,
+     "text": "And whenever you're curious, there's Nexus — your trading co-pilot.",
+     "focus": [
+      {
+       "sel": "[data-testid=nexus-fab]"
+      }
+     ]
+    },
+    {
+     "start": 4.465,
+     "end": 11.39,
+     "text": "Point it at a candlestick chart, a metric, or any number on screen, and it walks you through it using your own live data.",
+     "focus": [
+      {
+       "sel": "[data-testid=nexus-chat]"
+      }
+     ]
+    },
+    {
+     "start": 11.61,
+     "end": 19.26,
+     "text": "Ask for a trade, and it picks only from setups the system has already computed — every figure checked, nothing invented.",
+     "focus": [
+      {
+       "sel": "[data-testid=nexus-chat]"
+      }
+     ]
+    },
+    {
+     "start": 19.48,
+     "end": 22.455,
+     "text": "And when nothing's worth taking, it tells you so.",
+     "focus": [
+      {
+       "sel": "[data-testid=nexus-chat]"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8-close",
+   "tab": "AGENT",
+   "audio": "tour/8-close.mp3?v=f371ade91b",
+   "duration": 20.925,
+   "cues": [
+    {
+     "start": 0.12,
+     "end": 1.67,
+     "text": "That's the tour.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 1.89,
+     "end": 10.69,
+     "text": "Getting started is simple: bring your own AI API key and your broker's API keys, and start building, researching and paper trading.",
+     "focus": [
+      {
+       "sel": "main"
+      }
+     ]
+    },
+    {
+     "start": 10.91,
+     "end": 14.385,
+     "text": "QuantNexus is designed and built by Arpit Jain.",
+     "focus": [
+      {
+       "sel": "#demo-chip"
+      }
+     ]
+    },
+    {
+     "start": 14.605,
+     "end": 20.705,
+     "text": "Explore freely — or use the request link at the bottom of the screen to see it running live. Thank you.",
+     "focus": [
+      {
+       "sel": "#demo-chip"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
