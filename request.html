@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Request a Live Walkthrough</title>
+<style>
+  :root { --bg:#0b0f14; --panel:#121821; --ink:#e6edf3; --muted:#8b98a5; --line:#243040; --accent:#f5b301; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f6f7f9; --panel:#fff; --ink:#111827; --muted:#5b6472; --line:#d9dee5; --accent:#b07d00; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 system-ui, sans-serif; }
+  main { max-width:520px; margin:48px auto; padding:0 16px; }
+  h1 { font-size:22px; margin:0 0 6px; }
+  p { color:var(--muted); margin:0 0 24px; }
+  form { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px; display:grid; gap:14px; }
+  label { display:grid; gap:4px; font-size:13px; color:var(--muted); }
+  input, textarea { font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:9px 10px; }
+  button { font:600 14px system-ui; background:var(--accent); color:#111; border:0; border-radius:6px; padding:10px; cursor:pointer; }
+  .hp { display:none; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Request a live walkthrough</h1>
+  <p>The public demo is a fixed snapshot. The live system — real-time prices, the agent pipeline,
+     the committee — runs privately. Leave your details and I'll set up a screen-share.</p>
+  <form name="live-access" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company_url">
+    <input type="hidden" name="form-name" value="live-access">
+    <label class="hp">Leave empty <input name="company_url"></label>
+    <label>Name <input name="name" required maxlength="100"></label>
+    <label>Email <input name="email" type="email" required maxlength="200"></label>
+    <label>Company &amp; role <input name="company" maxlength="200"></label>
+    <label>Preferred time (with time zone) <input name="when" maxlength="200"></label>
+    <label>Anything you'd like to see? <textarea name="notes" rows="3" maxlength="1000"></textarea></label>
+    <button type="submit">Send request</button>
+  </form>
+  <p style="margin-top:16px"><a href="index.html">&larr; Back to the demo</a></p>
+</main>
+</body>
+</html>
